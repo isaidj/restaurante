@@ -7,74 +7,88 @@
     <link rel="stylesheet" href="java.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Proyecto</title>
 </head>
 <body>
     <div class="container-fluid  " id="divglobal">
-        <div class="col-sm-2">
-            <span onclick="openNav()"><img src="imagenes/icon menu.jpg" class="pointer" width="80vh" height="80vh"
+        <div class="col-sm-1">
+            <br>
+            <span onclick="openNav()"><img src="imagenes/icon menu.png" class="pointer" width="40vh" height="40vh"
                     alt=""></span>
             <div class=" sidenav" id="mySidenav">
                 <!---Menu lado izquierdo-->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">
                     <div class=" divbotn">
-                        <button id="boton" class="btn ">Inicio</button>
+    
+                        <button id="boton" class="btn "><i class="fa fa-home icons" style="font-size: 3vh;"> </i>
+                            Inicio</button>
                     </div>
                 </a>
                 <a href="#">
                     <div class="divbotn">
-                        <button id="boton" class="btn ">Mis puntos</button>
+    
+                        <button id="boton" class="btn "><img src="imagenes/dollar.png" alt=""
+                                style="width: 3vh;height: 3vh;"> Mis puntos</button>
                     </div>
                 </a>
                 <a href="#">
                     <div class="divbotn">
-                        <button id="boton" class="btn ">Perfil</button>
+                        <button id="boton" class="btn "><img src="imagenes/categoria.png" alt=""
+                                style="width: 3vh;height: 3vh;"> Categoria</button>
                     </div>
                 </a>
                 <a href="#">
                     <div class="divbotn">
-                        <button id="boton" class="btn ">Configuracion</button>
+                        <button id="boton" class="btn "><i class="fa fa-cogs" style="font-size: 3vh;"></i>
+                            Configuracion</button>
+    
+    
                     </div>
                 </a>
-
+    
                 <a href="#">
                     <div class="divbotn">
-                        <button id="boton" class="btn ">Acerca del App</button>
+                        <button id="boton" class="btn "><img src="imagenes/question.png" alt=""
+                                style="width: 3vh;height: 3vh;"> Acerca del App</button>
                     </div>
                 </a>
             </div>
         </div>
 
 
-        <!-- <div class="divbotn">
-                <button id="boton" class="btn ">Inicio</button>
-            </div>
-            <div class="divbotn">
-                <button  id="boton" class="btn ">Mis puntos</button>
-            </div>
-            <div class="divbotn">
-                <button  id="boton" class="btn ">Perfil</button>
-            </div>
-            <div class="divbotn">
-                <button  id="boton"  class="btn ">Configuracion</button>
-            </div>
-            <div class="divbotn">
-                <button  id="boton"  class="btn ">¿Porque es importante reciclar?</button>
-            </div>
-            <div class="divbotn">
-                <button  id="boton"  class="btn ">Acerca del App</button>
-            </div> -->
-            <div class=" col-sm-10 " id="menuderecho">
+            <div class=" col-sm-9 " id="menuderecho">
                 <!---Menu lado derecho-->
                 <div class="banner">
-                    <img src="imagenes/unisimon-banner.png" width="400vh" height="80vh" alt="">
-                    <img src="imagenes/Logo Eat.png" width="45" height="65vh" alt="">
+                    <img src="imagenes/unisimon-banner.png" width="400vh" height="85vh" alt="">
+                    <img src="imagenes/Logo Eat.png" width="60" height="85vh" alt="">
+                    <div class=" col-sm-1 " id="menuderecho">
 
-                </div>
-                <div class="user">
-                    <img src="imagenes/user.png" width="65vh" height="65vh" alt="">
+                    </div>
+                    <div class=" col-sm-7 " id="menuderecho">
+                        
+                    </div>
+                    <div class=" col-sm-2 " id="menuderecho">
+
+                    </div>
+
+                </div>   
+
+            </div>
+            <div class=" col-sm-2 " id="menuderecho">
+                <!---Menu lado derecho-->
+                <img src="imagenes/user.png" width="65vh" height="65vh" alt="">
+                <span onclick="openNavRight()"><img src="imagenes/icon menu.png" class="pointer" style="top:0 ;right:0 ;" width="40vh" height="40vh"
+                    alt=""></span>
+               
+                <div class=" col-sm-12 user sidenavRight" id="mySidenavRight">
                     
+                        <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">&times;</a> 
+                        <a href="#">sadasdsad</a>
+                        <a href="#">sadasdsad</a>
+                        <a href="#">sadasdsad</a>
                 </div>
         
             </div>

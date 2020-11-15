@@ -11,7 +11,7 @@ border-radius: 30px 11px 30px 11px;
 
 
 #menuizq{
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(52, 52, 52);
     border: solid 2px 2px;
     width: 20%;
     color: white;
@@ -44,6 +44,27 @@ margin-left: 40vh;
     position: absolute;right: 0%;
     display:flex;
 }
+/* The side navigation menu derecho */
+.sidenavRight {
+  width: 10%; /* 100% Full-width */
+  height: 0%; /* 0 height - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 10vh; /* Stay at the top */
+  right: 10vh;
+  background-color: rgb(41, 41, 41); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: hidden;
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav .closebtnRight {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
 /* The side navigation menu */
 .sidenav {
@@ -55,6 +76,7 @@ margin-left: 40vh;
     left: 0;
     background-color: rgb(41, 41, 41); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
@@ -90,4 +112,8 @@ margin-left: 40vh;
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+  @media screen and (max-height: 450px) {
+    .sidenavRight {padding-top: 15px;}
+    .sidenavRight a {font-size: 18px;}
   }
