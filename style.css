@@ -54,6 +54,12 @@ margin-left: 40vh;
 #separador{
   border-color: aliceblue;
 }
+.tableTop{
+  margin-top: 3vh;
+margin-left: auto;
+margin-right: auto;
+
+}
 
 li{
   list-style: none;
@@ -80,8 +86,13 @@ li{
   background-color: rgb(153, 153, 153);
   width: 15vh;
   height: 15vh;
-  border-radius: 2vh;
+  border-radius: 2.5vh;
   object-fit: cover;
+}
+.textLittle{
+  text-align: center;
+  font-size: 2vh;
+  margin-top: 0vh; 
 }
 .img{
   width: 10vh;
