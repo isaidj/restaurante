@@ -47,6 +47,42 @@ height: 16.7vh;
 font-weight: bold;
 }
 
+.todobuscar{
+  margin-top: 4vh;
+  margin-left: 40vh;
+}
+.divBuscar{
+  
+  display:flex;
+  background-color: rgb(230, 230, 230);
+  border-radius: 1vh;
+  width: 70vh;
+
+}
+.iconbuscar{
+max-height: 4vh;
+}
+.inputBuscar{
+background-color: transparent;
+border-style: hidden;
+border-radius: 1vh;
+width: 70vh;
+height: 5vh;
+outline: none;
+}
+
+
+.btnBuscar{
+  background-color: rgb(52, 199, 39);
+  border-style: hidden;
+  border-radius: 1vh;
+  color: #f1f1f1;
+  width: 12vh;
+  height: 5vh;
+}
+
+
+
 .banner{
 margin-left: 40vh;
 
@@ -69,15 +105,10 @@ margin-right: auto;
   display: flex;
 }
 
-.olvidocontra{
-  
-}
-
 
 
 .txtLogin{
-  margin-top: 1vh;
-
+  margin-top: 1px;
 }
 
  
@@ -137,8 +168,8 @@ margin-right: auto;
 }
 .imgLittle{
   background-color: rgb(153, 153, 153);
-  width: 15vh;
-  height: 15vh;
+  width: 9vh;
+  height: 9vh;
   border-radius: 2.5vh;
   object-fit: cover;
 }
@@ -151,6 +182,46 @@ margin-right: auto;
   width: 40vh;
   height: 40vh;
   object-fit: cover;
+  position: relative;
+  
+}
+.divimagenes{
+  
+  display: flex;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+    margin-top: 4vh;
+    
+    
+}
+.imgBackgroundStyle:first-child{
+  background-color: rgb(71, 255, 80);
+}
+.imgBackgroundStyle:nth-child(2){
+  background-color: rgb(255, 92, 71);
+}
+.imgBackgroundStyle:nth-child(3){
+  background-color: rgb(71, 129, 255);
+}
+
+h2{
+  font-family: Poppins-SemiBold,sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 22px 16px;
+}
+.imgMedio{
+
+  position: relative;
 }
 
 
