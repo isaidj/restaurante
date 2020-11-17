@@ -1,24 +1,25 @@
 /* Variable Publicas*/
 let estado=false;
+/* Funciones de menus*/
 function openNavleft() {
-  /* Set the width of the side navigation to 250px */
+ 
     document.getElementById("mySidenav").style.width = "35vh";
   }
   
-  /* Set the width of the side navigation to 0 */
+  
   function closeNavleft() {
     document.getElementById("mySidenav").style.width = "0";
   }
-  /* Set the width of the side navigation to 250px */
+  
 function openNavRight() {
   document.getElementById("mySidenavRight").style.height = "20vh";
 }
 
-/* Set the width of the side navigation to 0 */
+
 function closeNavRight() {
   document.getElementById("mySidenavRight").style.height = "0";
 }
-
+/* Funcion para validad ventana abierta-cerrada menu derecho*/
 function validarVentana(){
   if(estado){
     let navderecha =  document.getElementById("mySidenavRight").style.height= "0vh";
