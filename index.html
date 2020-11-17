@@ -15,11 +15,11 @@
     <div class="container-fluid  " id="divglobal">
         <div class="col-sm-1">
             <br>
-            <span onclick="openNav()"><img src="imagenes/icon menu.png" class="pointer" width="40vh" height="40vh"
+            <span onclick="openNavleft()"><img src="imagenes/icon menu.png" class="pointer" width="40vh" height="40vh"
                     alt=""></span>
             <div class=" sidenav" id="mySidenav">
                 <!---Menu lado izquierdo-->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavleft()">&times;</a>
                 <a href="#">
                     <div class=" divbotn">
     
@@ -59,36 +59,80 @@
         </div>
 
 
-            <div class=" col-sm-9 " id="menuderecho">
-                <!---Menu lado derecho-->
+            <div class=" col-sm-9 " id="menuMedio">
+                <!---columna del medio-->
                 <div class="banner">
+                    
                     <img src="imagenes/unisimon-banner.png" width="400vh" height="85vh" alt="">
                     <img src="imagenes/Logo Eat.png" width="60" height="85vh" alt="">
-                    <div class=" col-sm-1 " id="menuderecho">
-
-                    </div>
-                    <div class=" col-sm-7 " id="menuderecho">
+                   
+                 </div>   
+                 <div class=" col-sm-12 ">
+                    <table>
+                        <tr>
+                            <td><img class="imgLittle" src="imagenes/Food-especial.png" alt=""></td>
+                            <td><img class="imgLittle" src="imagenes/food-sana.png" alt=""></td>
+                            <td><img class="imgLittle" src="imagenes/food-other.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img class="imgLittle" src="imagenes/Food-especial.png" alt=""></td>
+                            <td><img class="imgLittle" src="imagenes/food-sana.png" alt=""></td>
+                            <td><img class="imgLittle" src="imagenes/food-other.png" alt=""></td>
+                        </tr>
+                    </table>
+                    <table>
+                    
+                        <tbody>
+                            <tr>
+                    
+                                <td>
+                                    <div class=""><img class="img" src="imagenes/ejemplo__food1.jpg" alt=""></div>
+                                </td>
+                    
+                            </tr>
+                            <tr>
+                    
+                                <td>
+                                    <div class=""><img class="img" src="imagenes/ejemplo_food2.jpg" alt=""></div>
+                                </td>
+                    
+                            </tr>
+                            <tr>
+                                <div class=""><img class="img" src="imagenes/ejemplo_food3.jpg" alt=""></div>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                      
                         
-                    </div>
-                    <div class=" col-sm-2 " id="menuderecho">
-
-                    </div>
-
-                </div>   
+                   
+                 </div>
 
             </div>
+
             <div class=" col-sm-2 " id="menuderecho">
                 <!---Menu lado derecho-->
-                <img src="imagenes/user.png" width="65vh" height="65vh" alt="">
-                <span onclick="openNavRight()"><img src="imagenes/icon menu.png" class="pointer" style="top:0 ;right:0 ;" width="40vh" height="40vh"
-                    alt=""></span>
+                
+                <img onclick="validarVentana()" id ="imagenderecha" src="imagenes/user.png" class="pointer"  width="65vh" height="65vh" alt="">
                
-                <div class=" col-sm-12 user sidenavRight" id="mySidenavRight">
+                <div class=" col-sm-12 sidenavRight listnotpoint" id="mySidenavRight">
                     
-                        <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">&times;</a> 
-                        <a href="#">sadasdsad</a>
-                        <a href="#">sadasdsad</a>
-                        <a href="#">sadasdsad</a>
+                        
+                        <ul id="noBorder" >
+                            <!-- <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">&times;</a>  -->
+                           
+                                        <th ><img src="imagenes/user.png" class="pointer" style="right: 0;" width="65vh" height="65vh" alt="">  isai hernandez</th>
+                                       <hr id="separador">
+                             
+                            
+                            
+                            <li class="" >Cuenta</li>
+                            <li class="" >Cerrar sesion</li>
+                            
+                            
+                        </ul>
+                        
                 </div>
         
             </div>
