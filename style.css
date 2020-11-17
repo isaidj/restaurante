@@ -10,6 +10,7 @@ body{
 display: flex;
 padding: 0px 0px;
 border-radius: 30px 11px 30px 11px;
+size: 100%;
 }
 
 
@@ -55,15 +56,31 @@ margin-left: 40vh;
   border-color: aliceblue;
 }
 .tableTop{
-  margin-top: 3vh;
+margin-top: 3vh;
 margin-left: auto;
 margin-right: auto;
 
 }
-.txtLogin{
-  margin-top: 1vh;
+.border{
+  border: 1px;
+  
+}
+.botoneslogin{
+  display: flex;
 }
 
+.olvidocontra{
+  
+}
+
+
+
+.txtLogin{
+  margin-top: 1vh;
+
+}
+
+ 
 .botonLogin{
   background-color:#09843b;
   border-radius: 0.3vh;
@@ -89,20 +106,22 @@ margin-right: auto;
   padding: 1em;
   color: #09843b;
   text-align: left;
-  border: 1px solid rgba(0,0,0,.125);
-  padding: 1vh;
+   padding: 1vh;
  
 }
 
-
-li{
+.opcioneslogin{
   list-style: none;
 }
 
 .listnotpoint{
   color: aliceblue;
+
   font-family:sans-serif;
 }
+
+
+
 
 .user{
     position: absolute;right: 0%;
@@ -129,8 +148,8 @@ li{
   margin-top: 0vh; 
 }
 .img{
-  width: 10vh;
-  height: 10vh;
+  width: 40vh;
+  height: 40vh;
   object-fit: cover;
 }
 
@@ -142,7 +161,7 @@ li{
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0h; /* Stay at the top */
-  right: 10vh;
+  right: 0vh;
   background-color: rgb(41, 41, 41); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   overflow-y: hidden;
