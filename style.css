@@ -24,6 +24,10 @@ size: 100%;
 }
 .pointer {cursor: pointer;}
 
+.puntos{
+font-size: 16px;
+font-family:sans-serif;
+}
 #menuMedio{
     transition: margin-left .5s;
     padding: 20px;
@@ -49,7 +53,8 @@ font-weight: bold;
 
 .todobuscar{
   margin-top: 4vh;
-  margin-left: 40vh;
+  display: flex;
+  justify-content: center;
 }
 .divBuscar{
   
@@ -61,6 +66,7 @@ font-weight: bold;
 }
 .iconbuscar{
 max-height: 4vh;
+
 }
 .inputBuscar{
 background-color: transparent;
@@ -84,9 +90,11 @@ outline: none;
 
 
 .banner{
-margin-left: 40vh;
+  display: flex;
+  justify-content: center;
 
 }
+
 
 #separador{
   border-color: aliceblue;
@@ -101,29 +109,42 @@ margin-right: auto;
   border: 1px;
   
 }
-.botoneslogin{
-  display: flex;
-}
+
 
 
 
 .txtLogin{
-  margin-top: 1px;
+  margin-top: 1vh;
 }
 
  
 .botonLogin{
-  background-color:#09843b;
+  background-color:#00a341;
   border-radius: 0.3vh;
   width: 15vh;
   height: 5vh ;
   border-style: hidden;
   cursor: pointer;
+  color: #fff;
+  font-size: large;
+  
   
 }
+.olvidocontra{
+  
+  float: right;
+  
+}
+.botonLogin:focus{
+ box-shadow: 0 0 0 4px #09843b;
+}
+.botonLogin:active{
+  color: aqua;
+}
+
 
 .tituloLogin{
-  font-family: Montserrat,sans-serif;
+  font-family:sans-serif;
   font-size: 27.7px;
   color: #09843b;
   text-align: center;
@@ -131,13 +152,15 @@ margin-right: auto;
   border: 1px solid rgba(0,0,0,.125);
   padding: 1vh;
 }
+
 .bloqueLogin{
   font-size: 14px;
-  font-family: Montserrat,sans-serif;
+  font-family: sans-serif;
   padding: 1em;
   color: #09843b;
   text-align: left;
-   padding: 1vh;
+  padding: 1vh;
+  border: 1px solid  rgba(0,0,0,.125);
  
 }
 

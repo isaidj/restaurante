@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container-fluid  " id="divglobal">
-        <div class="col-sm-1 border">
+        <div class="col-sm-2 ">
             <br>
             <span onclick="openNavleft()"><img src="imagenes/icon menu.png" class="pointer" width="40vh" height="40vh"
                     alt=""></span>
@@ -61,12 +61,12 @@
         </div>
 
 
-            <div class=" col-sm-9 border" id="menuMedio">
+            <div class=" col-sm-8 " id="menuMedio">
                 <!---columna del medio-->
                 <div class="banner">
                     <div>
-                        <img src="imagenes/unisimon-banner.png" width="400vh" height="85vh" alt="">
-                        <img src="imagenes/Logo Eat.png" width="60" height="85vh" alt="">
+                        <img src="imagenes/banner.png" width="520vh" height="115vh" alt="">
+                        
                     </div>
                     
                     
@@ -75,7 +75,7 @@
                  <div class="todobuscar ">
                      <div  > 
                          <div class="divBuscar ">
-                             <img src="imagenes/Food-icon-buscar.png" class="iconbuscar" alt="">
+                             <img src="imagenes/Food-icon-buscar.png"  class="iconbuscar" alt="">
                           
                             
                              <input type="text"  class="inputBuscar" name="" placeholder="Ingresa el nombre de tu producto" id=""> 
@@ -132,8 +132,22 @@
 
             </div>
 
-            <div class=" col-sm-2 border" id="menuderecho">
+            <div class=" col-sm-2 " id="menuderecho">
                 <!---Menu lado derecho-->
+
+                <?php
+                $sql="SELECT *"
+                ?>
+
+                <label for=""> Aqui van los puntos
+                    <?php
+                    include "login.php";
+
+                    $puntos= "SELECT * FROM `usuario` WHERE `login` LIKE '$nombre' AND `password` LIKE '$contrasena'";
+                    echo $puntos;
+                    ?>
+                </label>
+                
                 <div>
                     <img onclick="validarVentana()" src="imagenes/arrow-down.png" id ="imagenderecha" style="margin-top: 3vh;"  class="pointer"  width="30vh" height="30vh" alt="">
                     <img onclick="validarVentana()" id ="imagenderecha" src="imagenes/ejemplo-avatar.png" class="pointer"   width="65vh" height="65vh" alt="">
@@ -141,13 +155,13 @@
                 </div>
                 
                
-                <div class=" col-sm-12 sidenavRight listnotpoint border" id="mySidenavRight">
+                <div class=" col-sm-12 sidenavRight listnotpoint " id="mySidenavRight">
                     
                         
                         <ul id="noBorder" >
                             <!-- <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">&times;</a>  -->
                            
-                                        <th ><img src="imagenes/ejemplo-avatar.png" class="pointer" style="" width="65vh" height="65vh" alt="">  isai hernandez</th>
+                                        <th ><img src="imagenes/ejemplo-avatar.png" class="pointer" style="" width="65vh" height="65vh" alt=""> Aqui va el nombre</th>
                                        <hr id="separador">
                              
                             
