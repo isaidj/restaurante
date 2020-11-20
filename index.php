@@ -143,78 +143,75 @@
 
         <div class=" col-sm-2 " id="menuderecho">
             <!---Menu lado derecho-->
-
-
-
-            <label   class="login" for="">ashdsfdsf
+            <div></div>
+            
+            <h5 class="punto" style=" font-family: 'Lucida Sans'; font-weight: bold; font-size: 3vh; margin-top: 2vh;">
+            <img src="imagenes/dollar.png" alt="" style="width: 3vh;height: 3vh;">
                 <?php
                 include_once "login.php";
-                $puntos ="SELECT `puntos` FROM `estudiante` WHERE codigo='1234'";
-                
+                $puntos = "SELECT `puntos` FROM `estudiante` WHERE codigo='1234'";
+
                 $validar = $conn->query($puntos);
                 if ($validar->num_rows > 0) {
-        
+
                     $admin;
-                    while($row = $validar->fetch_assoc()) {
-                       # $admin = $row["tipo"];
-                       
-                        echo "tus puntos: " . $row["puntos"];
+                    while ($row = $validar->fetch_assoc()) {
+                        # $admin = $row["tipo"];
 
+                        echo " " . $row["puntos"];
                     }
-
                 }
 
                 ?>
-            </label>
-
-            <div>
-                <img onclick="validarVentana()" src="imagenes/arrow-down.png" id="imagenderecha" style="margin-top: 3vh;" class="pointer" width="30vh" height="30vh" alt="">
-                <img onclick="validarVentana()" id="imagenderecha" src="imagenes/ejemplo-avatar.png" class="pointer" width="65vh" height="65vh" alt="">
-
-            </div>
+                </h1>
 
 
-            <div class=" col-sm-12 sidenavRight listnotpoint " id="mySidenavRight">
+                <div>
+                    <img onclick="validarVentana()" src="imagenes/arrow-down.png" id="imagenderecha" style="margin-top: 3vh;" class="pointer" width="30vh" height="30vh" alt="">
+                    <img onclick="validarVentana()" id="imagenderecha" src="imagenes/ejemplo-avatar.png" class="pointer" width="65vh" height="65vh" alt="">
+
+                </div>
 
 
-                <ul id="noBorder">
-                    <!-- <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">&times;</a>  -->
+                <div class=" col-sm-12 sidenavRight listnotpoint " id="mySidenavRight">
 
-                    <th> <img src="imagenes/ejemplo-avatar.png" class="pointer" style="" width="65vh" height="65vh" alt="">
-                        <?php
-                        
-                        include_once "login.php";
-                        $nombreDelUsuario=$_SESSION["nombreusuario"];
-                        $contrasenaDelUsuario=$_SESSION["contrasenausuario"];
-                        
-                        $info ="SELECT `nombre`,`apellido` FROM `estudiante` WHERE nombre='$nombreDelUsuario' AND contrasena='$contrasenaDelUsuario'";
-                        
-                        $validar = $conn->query($info);
-                        if ($validar->num_rows > 0) {
-                
-                            $admin;
-                            while($row = $validar->fetch_assoc()) {
-                               # $admin = $row["tipo"];
-                               
-                                echo $row["nombre"]." ".$row["apellido"];
 
+                    <ul id="noBorder">
+                        <!-- <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">&times;</a>  -->
+
+                        <th> <img src="imagenes/ejemplo-avatar.png" class="pointer" style="" width="65vh" height="65vh" alt="">
+                            <?php
+
+                            include_once "login.php";
+                            $nombreDelUsuario = $_SESSION["nombreusuario"];
+                            $contrasenaDelUsuario = $_SESSION["contrasenausuario"];
+
+                            $info = "SELECT `nombre`,`apellido` FROM `estudiante` WHERE nombre='$nombreDelUsuario' AND contrasena='$contrasenaDelUsuario'";
+
+                            $validar = $conn->query($info);
+                            if ($validar->num_rows > 0) {
+
+                                $admin;
+                                while ($row = $validar->fetch_assoc()) {
+                                    # $admin = $row["tipo"];
+
+                                    echo $row["nombre"] . " " . $row["apellido"];
+                                }
                             }
 
-                        }
-                        
 
-                        ?></th>
-                    <hr id="separador">
+                            ?></th>
+                        <hr id="separador">
 
 
 
-                    <li class="opcioneslogin">Cuenta</li>
-                    <li class="opcioneslogin"> <a href="login.html" name="cerrarsession"> Cerrar sesion</a></li>
+                        <li class="opcioneslogin">Cuenta</li>
+                        <li class="opcioneslogin"> <a href="login.html" name="cerrarsession"> Cerrar sesion</a></li>
 
 
-                </ul>
+                    </ul>
 
-            </div>
+                </div>
 
         </div>
     </div>

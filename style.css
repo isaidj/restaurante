@@ -27,19 +27,14 @@ height: 4vh;
     font-size: medium;
     
 }
-.pointer {cursor: pointer;}
-
-.puntos{
-
+.pointer {cursor: pointer;
 }
-#menuMedio{
- enuMedio{
-    transition: margin-left .5s;
-    transition: margin-left .5s;
-    transition: margin-left .5s;
-    transition: margin-left .5s;
-    padding: 20px;
+
+.punto{
+  
+  color: #00a341;
 }
+
 #imagenderecha{
   float: right;
 }
@@ -60,7 +55,7 @@ font-weight: bold;
 }
 
 .todobuscar{
-  margin-top: 4vh;
+  margin-top: 20vh;
   display: flex;
   justify-content: center;
 }
@@ -87,7 +82,7 @@ outline: none;
 
 
 .btnBuscar{
-  background-color: rgb(52, 199, 39);
+  background-color: rgb(247, 255, 246);
   border-style: hidden;
   border-radius: 1vh;
   color: #f1f1f1;
