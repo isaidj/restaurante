@@ -73,57 +73,10 @@
                     
                    
                  </div>   
-                 <div class="todobuscar ">
-                     <div  > 
-                         <div class="divBuscar ">
-                             <img src="imagenes/Food-icon-buscar.png"  class="iconbuscar" alt="">
-                          
-                            
-                             <input type="text"  class="inputBuscar" name="" placeholder="Ingresa el nombre de tu producto" id=""> 
-                             <button class="btnBuscar">Buscar</button>
-                             
-                            </div>
-                         
-                         
-                        </div>
-                    
-                   
-                 </div>
+                 
                  <div class=" col-sm-12 ">
-                    <table class="tableTop center" hidden >
-                        <tr>
-                            <td><img class="imgLittle" src="imagenes/Food-especial.png" alt=""><h1 class="textLittle">Especial</h1></td>
-                            <td><img class="imgLittle" src="imagenes/food-sana.png" alt=""><h1 class="textLittle">Vegano</h1></td>
-                            <td><img class="imgLittle" src="imagenes/food-other.png" alt=""><h1 class="textLittle">Otros</h1></td>
-                        </tr>
-                        <tr>
-                            <td><img class="imgLittle" src="imagenes/Food-drink.png" alt=""><h1 class="textLittle">Bebidas</h1></td>
-                            <td><img class="imgLittle" src="imagenes/Food-ejecutivo.png"><h1 class="textLittle">Ejecutivo</h1></td>
-                            <td><img class="imgLittle" src="imagenes/Food-points.png" alt=""><h1 class="textLittle">Puntos</h1></td>
-                        </tr>
-                    </table>
-                    
-
-                    <div class="divimagenes">
-                        <div class="imgBackgroundStyle" >
-                            <img class="img"  src="imagenes/platos/Food-ensaladaAtun.png" alt="">
-                            <div>
-                                <h2>Ensalda con atun</h2>
-                            </div>
-                        </div>
-                        <div class="imgBackgroundStyle">
-                            <img class="img" src="imagenes/platos/Food-carneBistec.jpg" alt="">
-                            <div>
-                                <h2>Carne en bistec</h2>
-                            </div>
-                        </div>
-                        <div class="imgBackgroundStyle">
-                            <img class="img" src="imagenes/platos/Food-espaguetiTradicional.png" alt="">
-                            <div>
-                                <h2>Espagueti Tradicional</h2>
-                            </div>
-                        </div>
-                    </div>
+                   <center> <h3>Administrador</h3></center>
+                      
                    
                     
                       

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="java.js">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Proyecto</title>
+</head>
+<body>
+    <div class="container-fluid  " id="divglobal">
+        <div class="col-md-2 ">  </div>
+
+
+
+        <div class=" col-md-8 " id="menuMedio">
+            <!---columna del medio-->
+
+            <div class="banner col-md-12 ">
+                
+                <div >
+                    <img src="imagenes/banner.png" width="520vh" height="115vh" alt="">
+                </div>
+
+              
+            </div>
+            
+            <div class="col-md-7" style="margin-right: auto; margin-left: auto;">
+            
+                <h3 class="tituloLogin">Registro</h3>
+                
+                <form action="login.php" class="bloqueLogin" method="post">
+                
+                    <button name="backLogin"  class="btnTransparent"> <img src="imagenes/back.png"  class="back"    alt=""> </button>
+                    
+                    <div class="col ">
+                        <input type="number" name="codigo" id="codigo" class="form-control txtLogin " value=""
+                            placeholder="Codigo Estudiantil" autocomplete="cc-number">
+
+                        <input type="text" name="Rnombre" id="nombre" class="form-control txtLogin " value=""
+                            placeholder="Nombre" autocomplete="given-name"> 
+
+                        <input type="text" name="apellido" id="apellido" class="form-control txtLogin " value=""
+                            placeholder="Apellido" autocomplete="additional-name">
+
+                        <input type="number" name="telefono" id="telefono" class="form-control txtLogin " value=""
+                            placeholder="Celular" autocomplete="tel">    
+                            
+                            <input type="text" name="email" id="email" class="form-control txtLogin " value=""
+                            placeholder="Email" autocomplete="email">
+                         
+                        <input type="password" name="Rcontrasena" id="contrasena" class="form-control  txtLogin" value=""
+                            placeholder="Contraseña" autocomplete="current-password">
+                    </div>
+                    <div class="botoneslogin">
+                        <div class="col ">
+            
+            
+                    
+                            <button type="submit" class="botonLogin   txtLogin" name="registroCompleto">Sign up</button>
+            
+            
+                            <a class="olvidocontra" href="index.php">Se me ha olvidado la contraseña</a></div>
+            
+            
+                    </div>
+            
+                </form>
+            </div>
+            <!----- <div class="bloquelogin">----->
+            
+            <!---</div>---->
+
+
+
+            
+        </div>
+
+
+        <div class=" col-md-2 " id="">
+
+        </div>
+
+
+
+
+    </div>
+    </div>
+
+    </div>
+
+
+<script src="java.js"></script>
+
+
+<!-------------------------------------------------------------------------------------->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+crossorigin="anonymous"></script>
+</body>
+</html>
