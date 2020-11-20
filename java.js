@@ -37,6 +37,14 @@ function validarVentana(){
   
 }
 
+let cerrarsesion =document.getElementsByClassName("opcioneslogin1");
+
+cerrarsesion.addEventListener('click' , ()=>{
+  
+  session_unset();
+  alert( "session destruida");
+  
+})
 
 
 
