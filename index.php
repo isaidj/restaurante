@@ -146,7 +146,7 @@
 
 
 
-            <label for=""> Aqui van los puntos
+            <label   class="login" for="">ashdsfdsf
                 <?php
                 include_once "login.php";
                 $puntos ="SELECT `puntos` FROM `estudiante` WHERE codigo='1234'";
@@ -180,7 +180,7 @@
                 <ul id="noBorder">
                     <!-- <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">&times;</a>  -->
 
-                    <th><img src="imagenes/ejemplo-avatar.png" class="pointer" style="" width="65vh" height="65vh" alt="">
+                    <th> <img src="imagenes/ejemplo-avatar.png" class="pointer" style="" width="65vh" height="65vh" alt="">
                         <?php
                         
                         include_once "login.php";

@@ -30,10 +30,13 @@ height: 4vh;
 .pointer {cursor: pointer;}
 
 .puntos{
-font-size: 16px;
-font-family:sans-serif;
+
 }
 #menuMedio{
+ enuMedio{
+    transition: margin-left .5s;
+    transition: margin-left .5s;
+    transition: margin-left .5s;
     transition: margin-left .5s;
     padding: 20px;
 }
