@@ -29,14 +29,14 @@
                 <a href="#">
                     <div class=" divbotn">
 
-                        <button id="boton"  class="btn "><i class="fa fa-home icons" style="font-size: 3vh;"> </i>
+                        <button id="boton" class="btn "><i class="fa fa-home icons" style="font-size: 3vh;"> </i>
                             Inicio</button>
                     </div>
                 </a>
                 <a href="#">
                     <div class="divbotn">
 
-                        <button id="boton" onclick="misPuntos()" class="btn "><img src="imagenes/dollar.png" alt="" style="width: 3vh;height: 3vh;"> Mis puntos</button>
+                        <button id="boton" class="btn "><img src="imagenes/dollar.png" alt="" style="width: 3vh;height: 3vh;"> Mis puntos</button>
                     </div>
                 </a>
                 <a href="#">
@@ -77,78 +77,39 @@
             </div>
             <div class="todobuscar ">
                 
-                <div>
-                    <div class="divBuscar ">
-                        <img src="imagenes/Food-icon-buscar.png" class="iconbuscar" alt="">
+               <h1>Historial</h1>
 
-
-                        <input type="text" class="inputBuscar" name="" placeholder="Ingresa el nombre de tu producto" id="">
-                        <button class="btnBuscar">Buscar</button>
-
-                    </div>
-
-
-                </div>
-                
+            </div>
             
-
-            </div>
             <div class=" col-sm-12 ">
-                <br>
-                <center><h1 style="font-family: sans-serif; font-weight: bold;">Platos del dia</h1></center>
-                <table class="tableTop center" hidden>
-                    <tr>
-                        <td><img class="imgLittle" src="imagenes/Food-especial.png" alt="">
-                            <h1 class="textLittle">Especial</h1>
-                        </td>
-                        <td><img class="imgLittle" src="imagenes/food-sana.png" alt="">
-                            <h1 class="textLittle">Vegano</h1>
-                        </td>
-                        <td><img class="imgLittle" src="imagenes/food-other.png" alt="">
-                            <h1 class="textLittle">Otros</h1>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img class="imgLittle" src="imagenes/Food-drink.png" alt="">
-                            <h1 class="textLittle">Bebidas</h1>
-                        </td>
-                        <td><img class="imgLittle" src="imagenes/Food-ejecutivo.png">
-                            <h1 class="textLittle">Ejecutivo</h1>
-                        </td>
-                        <td><img class="imgLittle" src="imagenes/Food-points.png" alt="">
-                            <h1 class="textLittle">Puntos</h1>
-                        </td>
-                    </tr>
-                </table>
-
-
-                <div class="divimagenes">
-                    <div class="imgBackgroundStyle">
-                        <img class="img" src="imagenes/platos/Food-ensaladaAtun.png" alt="">
-                        <div>
-                            <h2>Ensalda con atun</h2>
-                        </div>
-                    </div>
-                    <div class="imgBackgroundStyle">
-                        <img class="img" src="imagenes/platos/Food-carneBistec.jpg" alt="">
-                        <div>
-                            <h2>Carne en bistec</h2>
-                        </div>
-                    </div>
-                    <div class="imgBackgroundStyle">
-                        <img class="img" src="imagenes/platos/Food-espaguetiTradicional.png" alt="">
-                        <div>
-                            <h2>Espagueti Tradicional</h2>
-                        </div>
-                    </div>
-                </div>
-
+            
+            
+            <h3>Movimientos</h1>
 
 
 
 
             </div>
+            <h3> <?php
+               include_once "login.php";
+               $nombreDelUsuario = $_SESSION["nombreusuario"];
+                $contrasenaDelUsuario = $_SESSION["contrasenausuario"];
 
+                $puntos = "SELECT `puntos` FROM `estudiante` WHERE nombre='$nombreDelUsuario' AND contrasena='$contrasenaDelUsuario'";
+
+                $validar = $conn->query($puntos);
+                if ($validar->num_rows > 0) {
+
+                    $admin;
+                    while ($row = $validar->fetch_assoc()) {
+                        # $admin = $row["tipo"];
+
+                        echo " " . $row["puntos"];
+                    }
+                }
+                ?>
+                   19/11/2020  2:10 pm  </h3>
+            
         </div>
 
         <div class=" col-sm-2 " id="menuderecho">
@@ -187,7 +148,7 @@
             </h5>
                 <div class=" col-sm-12 sidenavRight listnotpoint " id="mySidenavRight">
     
-                <br>
+            
                     <ul id="noBorder">
                         <!-- <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">&times;</a>  -->
 
